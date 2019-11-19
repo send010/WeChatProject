@@ -216,7 +216,7 @@ void ReSendUser(UserInfo* user)
 	while (true)
 	{
 		//发送到控制端
-		hWnd = FindWindow(NULL, TEXT("微信助手"));
+		hWnd = FindWindow(NULL, TEXT("微信助手窗体"));
 		if (hWnd == NULL)
 		{
 			continue;
@@ -276,7 +276,7 @@ void SendUserListInfo()
 
 
 	//发送到控制端
-	HWND hWnd = FindWindow(NULL, TEXT("微信助手"));
+	HWND hWnd = FindWindow(NULL, TEXT("微信助手窗体"));
 	if (hWnd == NULL)
 	{
 		//创建线程 发送消息 防止漏掉联系人

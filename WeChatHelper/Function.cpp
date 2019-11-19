@@ -127,7 +127,7 @@ void GetInformation()
 	wcscpy_s(info->header, wcslen(UTF8ToUnicode(header)) + 1, UTF8ToUnicode(header));
 
 	//发送到客户端
-	HWND hInformation = FindWindow(NULL, L"Information");
+	HWND hInformation = FindWindow(NULL, L"微信助手窗口");
 	if (hInformation == NULL)
 	{
 		OutputDebugStringA("未查找到Information窗口");

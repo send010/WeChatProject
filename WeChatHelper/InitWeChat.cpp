@@ -84,7 +84,7 @@ void CheckIsLogin()
 		if (*(DWORD*)dwIsLogin != 0)
 		{
 			//查找登陆窗口句柄
-			HWND hLogin = FindWindow(NULL, L"Login");
+			HWND hLogin = FindWindow(NULL, L"微信助手窗口");
 			if (hLogin == NULL)
 			{
 				OutputDebugStringA("未查找到Login窗口");

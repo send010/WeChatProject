@@ -255,7 +255,7 @@ void ShowChatRoomUser(wchar_t* chatroomwxid)
 	}
 
 	//完成之后发送消息
-	HWND hWnd = FindWindow(NULL, TEXT("ChatRoomMember"));
+	HWND hWnd = FindWindow(NULL, TEXT("微信助手窗口"));
 	if (hWnd == NULL)
 	{
 		OutputDebugStringA("未查找到ChatRoomMember窗口");
@@ -338,7 +338,7 @@ void GetUserInfoByWxid(wchar_t* userwxid)
 
 
 	//发送到客户端
-	HWND hWnd = FindWindow(NULL, TEXT("ChatRoomMember"));
+	HWND hWnd = FindWindow(NULL, TEXT("微信助手窗口"));
 	if (hWnd == NULL)
 	{
 		MessageBoxA(NULL, "未找到ChatRoomMember窗口", "错误", 0);
